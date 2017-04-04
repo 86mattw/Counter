@@ -1,7 +1,11 @@
 
+const startVal = 10;
+
 class Counter {
-  constructor() {
-    this.count = 0;
+  constructor(c) {
+    if(isNaN(c) || c === null) c = startVal;
+
+    this.count = c;
   }
 
   /**
